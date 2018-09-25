@@ -1,4 +1,4 @@
-IMAGE="spark-scala-sbt:1"
+IMAGE="spark-scala-sbt:2"
 
 BUILD="sbt package"
 RUN="\

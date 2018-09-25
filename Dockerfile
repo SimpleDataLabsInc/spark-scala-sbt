@@ -1,9 +1,11 @@
-FROM continuumio/miniconda2:4.5.4
+FROM python:3.5.6-stretch
+
+MAINTAINER  Ludwig Prager <ludwig.prager@celp.de>
 
 RUN apt update && apt -y install \
 	wget \
 	openjdk-8-jdk \
-	vim
+	vim less
 
 RUN rm -rf /var/lib/apt/lists/*
 
