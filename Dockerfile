@@ -41,7 +41,7 @@ RUN /spark-${SPARK}-bin-hadoop${HADOOP}/bin/spark-submit \
 	--master local[4] \
 	target/scala-2.11/simple-project_2.11-1.0.jar
 
-WORKDIR /my_project/
+WORKDIR /playground/
 
 CMD ["/bin/bash"]
 RUN ["/bin/bash"]
