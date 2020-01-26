@@ -1,4 +1,4 @@
-IMAGE="ludwigprager/spark-scala-sbt"
+IMAGE="spark-scala-sbt"
 
 docker run -ti \
 	--rm \
