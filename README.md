@@ -13,13 +13,6 @@ docker build  -t ludwigprager/spark-scala-sbt:latest .
 ~~~
 Subsequently, call 'spark-shell' or any other command.
 
-## Build and Compile your application
-Add your spark application in folder 'my_project'. Use 'SimpleApp' as blueprint. 
-Then call:
-~~~
-./build_and_run.sh
-~~~
-
 ## short cut in you .bashrc
 with the following shortcut in your .bashrc you are able to start this container by typing 'sd'
 ~~~

@@ -27,20 +27,6 @@ RUN dpkg -i sbt-${SBT}.deb
 RUN rm sbt-${SBT}.deb
 RUN sbt sbtVersion
 
-# test app
-WORKDIR /SimpleApp/
-RUN mkdir -p src/main/scala/
-COPY SimpleApp/SimpleApp.scala src/main/scala/
-COPY SimpleApp/build.sbt .
-
-WORKDIR /SimpleApp/
-RUN cp /spark-${SPARK}-bin-hadoop2.7/README.md .
-RUN sbt package
-RUN /spark-${SPARK}-bin-hadoop${HADOOP}/bin/spark-submit \
-	--class "SimpleApp" \
-	--master local[4] \
-	target/scala-2.11/simple-project_2.11-1.0.jar
-
 WORKDIR /playground/
 
 CMD ["/bin/bash"]
