@@ -5,7 +5,7 @@ MAINTAINER  Ludwig Prager <ludwig.prager@celp.de>
 RUN apt update && apt -y install \
 	wget \
 	openjdk-8-jdk \
-	vim less
+	vim less maven
 
 RUN rm -rf /var/lib/apt/lists/*
 
@@ -43,4 +43,5 @@ RUN /spark-${SPARK}-bin-hadoop${HADOOP}/bin/spark-submit \
 
 WORKDIR /my_project/
 
+CMD ["/bin/bash"]
 RUN ["/bin/bash"]
