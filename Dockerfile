@@ -29,7 +29,7 @@ RUN sbt sbtVersion
 
 # other
 
-RUN https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 WORKDIR /playground/
 

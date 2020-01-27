@@ -2,3 +2,5 @@ notes
 notizen
 playground/*
 !playground/.gitkeep
+ivy2_cache/*
+!ivy2_cache/.gitkeep
