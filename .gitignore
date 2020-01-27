@@ -4,3 +4,5 @@ playground/*
 !playground/.gitkeep
 ivy2_cache/*
 !ivy2_cache/.gitkeep
+m2_cache/*
+!m2_cache/.gitkeep
