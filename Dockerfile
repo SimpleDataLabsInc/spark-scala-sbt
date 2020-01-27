@@ -5,7 +5,7 @@ MAINTAINER  Ludwig Prager <ludwig.prager@celp.de>
 RUN apt update && apt -y install \
 	wget \
 	openjdk-8-jdk \
-	vim less maven zsh
+	vim less maven zsh tmux
 
 RUN rm -rf /var/lib/apt/lists/*
 

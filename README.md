@@ -4,7 +4,7 @@ This contains starts fast as the 'Self-Contained Application' from https://spark
 
 ## Build the container
 ~~~
-docker build  -t ludwigprager/spark-scala-sbt:latest .
+docker build  -t spark-scala-sbt:latest .
 ~~~
 
 ## Start a shell
@@ -22,7 +22,7 @@ docker run \
 	-ti --rm \
 	-v <path to your project>/:/my_project/ \
         -p 4040:4040 \
-	ludwigprager/spark-scala-sbt \
+	spark-scala-sbt \
 	/bin/bash
 }
 ~~~
