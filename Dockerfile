@@ -5,7 +5,7 @@ MAINTAINER  Ludwig Prager <ludwig.prager@celp.de>
 RUN apt update && apt -y install \
 	wget \
 	openjdk-8-jdk \
-	vim less maven
+	vim less maven zsh
 
 RUN rm -rf /var/lib/apt/lists/*
 
@@ -27,7 +27,11 @@ RUN dpkg -i sbt-${SBT}.deb
 RUN rm sbt-${SBT}.deb
 RUN sbt sbtVersion
 
+# other
+
+RUN https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+
 WORKDIR /playground/
 
-CMD ["/bin/bash"]
-RUN ["/bin/bash"]
+CMD ["zsh"]
+RUN ["zsh"]
